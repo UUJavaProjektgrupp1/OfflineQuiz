@@ -15,16 +15,13 @@ import java.util.List;
  */
 public class Questions {
 
-    public void importPackage() throws FileNotFoundException {
-        
-    }
-
     /**
      *
      */
-    public void listFilesForFolder() {
+    public List<String> listFilesForFolder() {
         File folder = new File("src/offlinequiz/packages");
         File[] listOfFiles = folder.listFiles();
+        List<String> questionsList = new ArrayList<String>();
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -33,10 +30,13 @@ public class Questions {
                 String string = file.getName();
                 String[] parts = string.split("\\.");
     
-    List<String> questionsList = new ArrayList<String>();
+    
 
         questionsList.add(parts[0]);
+        
             }
         }
+        return questionsList;
     }
+    
 }

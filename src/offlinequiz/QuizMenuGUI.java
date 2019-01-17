@@ -5,6 +5,10 @@
  */
 package offlinequiz;
 
+import java.util.*;
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
+
 /**
  *
  * @author conta
@@ -210,7 +214,13 @@ public class QuizMenuGUI extends javax.swing.JFrame {
             public void run() {
                 QuizMenuGUI qm = new QuizMenuGUI();
                 qm.setVisible(true);
-                //qm.packageDropDown.setModel(ComboBoxModel<String>);
+                Questions q = new Questions();
+                List<String> ls = new ArrayList<String>();
+                ls = q.listFilesForFolder();
+                
+                String[] s = ls.toArray(new String[ls.size()]);
+                //qm.packageDropDown.setModel(s);
+                qm.packageDropDown.setModel(new DefaultComboBoxModel(ls.toArray()));
                 
             }
         });
