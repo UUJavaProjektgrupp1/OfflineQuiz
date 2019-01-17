@@ -175,8 +175,13 @@ public class QuizMenuGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void playButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playButton1MouseClicked
-        EndScreen es = new EndScreen();
-        es.openPage();
+
+        ThreeChoiceGUI tcg = new ThreeChoiceGUI();
+        String choice = packageDropDown.getSelectedItem().toString();
+        this.hide();
+        tcg.openWindow();
+        
+        
     }//GEN-LAST:event_playButton1MouseClicked
 
     private void playButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButton1ActionPerformed
