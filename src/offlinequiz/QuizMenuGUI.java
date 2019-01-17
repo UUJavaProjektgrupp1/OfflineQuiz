@@ -17,7 +17,8 @@ public class QuizMenuGUI extends javax.swing.JFrame {
     public QuizMenuGUI() {
         initComponents();
     }
-
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -87,6 +88,11 @@ public class QuizMenuGUI extends javax.swing.JFrame {
                 playButton1MouseClicked(evt);
             }
         });
+        playButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                playButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Top 10 Scores");
 
@@ -148,10 +154,11 @@ public class QuizMenuGUI extends javax.swing.JFrame {
                         .addComponent(playButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel3)
+                                .addComponent(jLabel4)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
@@ -164,12 +171,15 @@ public class QuizMenuGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void playButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playButton1MouseClicked
-        
+        EndScreen es = new EndScreen();
+        es.openPage();
     }//GEN-LAST:event_playButton1MouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
+    private void playButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButton1ActionPerformed
+        //EndScreen es = new EndScreen();
+        //es.openPage();
+    }//GEN-LAST:event_playButton1ActionPerformed
+
     public void mainMenu() {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -198,7 +208,9 @@ public class QuizMenuGUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new QuizMenuGUI().setVisible(true);
+                QuizMenuGUI qm = new QuizMenuGUI();
+                qm.setVisible(true);
+                //qm.packageDropDown.setModel(ComboBoxModel<String> );
             }
         });
     }
