@@ -1,101 +1,101 @@
-!Vilket av Sveriges 3 landsdelar är störst till ytan?
-1. Svealand
-x. Norrland
-2. Götaland
+Vilket av Sveriges 3 landsdelar är störst till ytan?;
+Svealand;
+Norrland ---;
+Götaland;
 
-!Vad heter snögubben i filmen Frost?
-1. Björn
-x. Olof ---
-2. Hans
+Vad heter snögubben i filmen Frost?;
+Björn;
+Olof ---;
+Hans;
 
-!I spelet Angry Birds skjuter man iväg fåglar för att träffa... vad?
-1. Får
-x. Hästar
-2. Grisar ---
+I spelet Angry Birds skjuter man iväg fåglar för att träffa... vad?;
+Får;
+Hästar;
+Grisar ---;
 
-!FIFA och NHL är populära TV- och datorspel, vad spelar man i spelen?
-1. Fotboll och Hockey ---
-x. Fotboll och Basket
-2. Tennis och Hockey
+FIFA och NHL är populära TV- och datorspel, vad spelar man i spelen?;
+Fotboll och Hockey ---;
+Fotboll och Basket;
+Tennis och Hockey;
 
-!Vad heter Tv-serien där vi får följa Twilight Sparkle, Pinkie Pie, Rainbow Dash och draken Spike?
-1. My little pony ----
-x. Vampyrskolan
-2. Digimon
+Vad heter Tv-serien där vi får följa Twilight Sparkle, Pinkie Pie, Rainbow Dash och draken Spike?;
+My little pony ----;
+Vampyrskolan;
+Digimon;
 
-!Vad heter appen där foton som skickas och delas bara får ses en kort stund?
-1. Whatsapp
-x. Snapchat ---
-2. Instagram
+Vad heter appen där foton som skickas och delas bara får ses en kort stund?;
+Whatsapp;
+Snapchat ---;
+Instagram;
 
-!DualDgaming är en Youtube-kanal där David och Danne visar klipp där de spelar Minecraft och GTA. Vad kallar sig David när han lägger upp sina klipp?
-1. CrafterPX
-x. Troll24
-2. Ufosxm ---
+DualDgaming är en Youtube-kanal där David och Danne visar klipp där de spelar Minecraft och GTA. Vad kallar sig David när han lägger upp sina klipp?;
+CrafterPX;
+Troll24;
+Ufosxm ---;
 
-!I vilket lag spelar Zlatan Ibrahimovic?
-1. Manchester United
-x. Paris SG
-2. LA Galaxy ----
+I vilket lag spelar Zlatan Ibrahimovic?;
+Manchester United;
+Paris SG;
+LA Galaxy ----;
 
 
-!Vad heter Youtube-kanalen som har massor av följare och består av Emil, Viktor och Joel?
-1. DunderHumor
-x. IJustWantToBeCool ---
-2. DualDGaming
+Vad heter Youtube-kanalen som har massor av följare och består av Emil, Viktor och Joel?;
+DunderHumor;
+IJustWantToBeCool ---;
+DualDGaming;
 
-!Video-appen Musical.ly bytte 2018 namn. Vad heter den nu?
-1. TikTok ---
-x. TokTik
-2. TikTik
+Video-appen Musical.ly bytte 2018 namn. Vad heter den nu?;
+TikTok ---;
+TokTik;
+TikTik;
 
-!Vad heter kryddan som är populär under julen och som används i lussebullar?
-1.Saffran ---
-x.kanel
-2.salt 
+Vad heter kryddan som är populär under julen och som används i lussebullar?;
+Saffran ---;
+Kanel;
+Salt;
 
-!I vilket land ligger staden Rom? 
-1. Grekland
-x. Turkiet
-2. Italien ---
+I vilket land ligger staden Rom?;
+Grekland;
+Turkiet;
+Italien ---;
 
-!I vilket land gick fotbolls-EM 2016?
-1. England
-x. Spanien 
-2. Frankrike ---
+I vilket land gick fotbolls-EM 2016?;
+England;
+Spanien;
+Frankrike ---;
 
-!Vad heter Pippi Långstrumps pappa i förnamn?
-1. Johan
-x. Efrahim ---
-2. Mattis
+Vad heter Pippi Långstrumps pappa i förnamn?;
+Johan;
+Efrahim ---;
+Mattis;
 
-!Hur många ringar är det i Audis logga?
-1. 4 st
-x. 5 st
-2. 3 st
+Hur många ringar är det i Audis logo?;
+4 st ---;
+5 st;
+3 st;
 
-!Vad heter första boken i Harry Potter-serien?
-1. Harry Potter och De Vises Sten---
-x. Harry Potter och Fenixorden
-2. Harry Potter och Den flammande bägaren
+Vad heter första boken i Harry Potter-serien?;
+Harry Potter och De Vises Sten---;
+Harry Potter och Fenixorden;
+Harry Potter och Den flammande bägaren;
 
-!Vad heter Zlatan i efternamn? 
-1. Ibrahimovic ---
-X. Godetti
-2. Jokovic
+Vad heter Zlatan i efternamn?;
+Ibrahimovic ---;
+Godetti;
+Jokovic;
 
-!Guldbröllop är ett traditionellt jubileum som ett par firar efter 50 års äktenskap. Enligt Nationalencyklopedin, vilket material förknippas med 1 års bröllopsjubileum?
-1. Kork
-x. Papper
-2. Bomull ---
+Guldbröllop är ett traditionellt jubileum som ett par firar efter 50 års äktenskap. Enligt Nationalencyklopedin, vilket material förknippas med 1 års bröllopsjubileum?;
+Kork;
+Papper;
+Bomull ---;
 
-!Vilken känd musikgrupp var Ica-Stig (Hans Mosesson) medlem i?
-1. Blå tåget
-x. Hoola Bandoola Band
-2. Nationalteatern ---
+Vilken känd musikgrupp var Ica-Stig (Hans Mosesson) medlem i?;
+Blå tåget;
+Hoola Bandoola Band;
+Nationalteatern ---;
 
-!Vilken musikgenre tillhör EDM artisten Skrillex
-1. Pop
-x. Dubstep ---
-2. Hip-Hop
+Vilken musikgenre tillhör EDM artisten Skrillex;
+Pop;
+Dubstep ---;
+Hip-Hop;
 
