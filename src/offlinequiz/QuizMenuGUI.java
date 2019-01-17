@@ -210,7 +210,8 @@ public class QuizMenuGUI extends javax.swing.JFrame {
             public void run() {
                 QuizMenuGUI qm = new QuizMenuGUI();
                 qm.setVisible(true);
-                //qm.packageDropDown.setModel(ComboBoxModel<String> );
+                //qm.packageDropDown.setModel(ComboBoxModel<String>);
+                
             }
         });
     }

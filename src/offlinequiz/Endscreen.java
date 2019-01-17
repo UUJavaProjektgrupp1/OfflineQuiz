@@ -9,6 +9,15 @@ package offlinequiz;
  *
  * @author conta
  */
-public class Endscreen {
+public class EndScreen {
+    public void openPage(){
+    EndScreenGUI gui = new EndScreenGUI();
+    gui.showMenu();
+    }
+    public void getInfo(){
+        //top 10 method here
+        //Antal rätt här
+        
+    }
     
 }
