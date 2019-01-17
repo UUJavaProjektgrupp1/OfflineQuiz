@@ -16,6 +16,8 @@ public class OfflineQuiz {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        QuizMenuGUI gui = new QuizMenuGUI();
+        gui.mainMenu();
     }
     
 }
