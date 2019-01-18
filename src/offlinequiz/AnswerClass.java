@@ -113,7 +113,7 @@ public class AnswerClass {
         Random newRand = new Random();
         
         //int randomInt = (int) Math.round(Math.random());
-        int randomInt = newRand.nextInt(array.length - 1);
+        int randomInt = newRand.nextInt(array.length-1);
         setQuestion(array[randomInt][0]);
             for (int j = 1; j <= 3; j++) {
                 String answer = array[randomInt][j];

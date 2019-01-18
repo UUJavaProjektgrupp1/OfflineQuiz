@@ -1,6 +1,6 @@
 Vad heter snögubben i filmen Frost?;
 Björn;
-Olof;
+Olof ---;
 Hans;
 
 I spelet Angry Birds skjuter man iväg fåglar för att träffa vad?;
@@ -84,7 +84,7 @@ Vad heter Youtube-kanalen som har massor av följare och består av Emil, Viktor
  DualDGaming;
 
 Vad heter Nalle Puhs åsnevän?;
- I-or ---;
+ Ior ---;
  Nasse;
  Tiger;
 
