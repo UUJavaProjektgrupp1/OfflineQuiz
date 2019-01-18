@@ -19,10 +19,10 @@ import java.util.Scanner;
  */
 public class arrayQuestion {
 
-    int answer = 4;
-    int question = 20;
+    static int answer = 4;
+    static int question = 20;
 
-    String[][] myArray = new String[question][answer];
+    static String[][] myArray = new String[question][answer];
 
     public void readFile(String filePath) throws FileNotFoundException {
 
@@ -51,6 +51,8 @@ public class arrayQuestion {
     }
 
     public String[][] getArray() {
-        return Arrays.copyOf(myArray, myArray.length);
+        //return Arrays.copyOf(myArray, myArray.length);
+
+        return myArray;
     }
 }
