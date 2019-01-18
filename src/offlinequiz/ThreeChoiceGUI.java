@@ -211,7 +211,7 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
                     // Fetch a set of randomized answers -----------------------------
                     ac.randomizeAnswers();
                 //Then set up the variables on the frame -------------------------------
-                tcg.Counter.setText(String.valueOf(qc.getCounter()));
+                tcg.Counter.setText(String.valueOf(qc.getCounter()+1));
                 tcg.questionLabel.setText(ac.getQuestion());
                 tcg.svar1.setText(ac.getAnswer1());
                 tcg.svar2.setText(ac.getAnswer2());
