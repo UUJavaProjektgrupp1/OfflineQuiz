@@ -1,0 +1,10 @@
+Namn: Abc, Tid: 2:06, Antal rätt: 10
+Namn: Bcd, Tid: 2:02, Antal rätt. 10
+Namn: Cde, Tid: 1:45, Antal rätt: 9
+Namn: Asa, Tid: 1:50, Antal rätt: 9
+Namn: Bta, Tid: 1:23, Antal rätt: 10
+Namn: Ksl, Tid: 2:35, Antal rätt:8
+Namn: Htp, Tid: 2:22, Antal rätt: 9
+Namn: Lek, Tid: 1:20, Antal rätt: 8
+Namn: Jet, Tid: 2:40, Antal rätt: 9
+Namn: Fad, Tid: 1.20, Antal rätt: 8
