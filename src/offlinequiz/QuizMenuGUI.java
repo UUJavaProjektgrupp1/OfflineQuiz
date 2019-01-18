@@ -174,19 +174,20 @@ public class QuizMenuGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+/*
     private void playButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playButton1MouseClicked
 
+
+        
+        
+    }//GEN-LAST:event_playButton1MouseClicked
+*/
+    //When PlayButton is clicked
+    private void playButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButton1ActionPerformed
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         String choice = packageDropDown.getSelectedItem().toString();
         this.hide();
         tcg.openWindow();
-        
-        
-    }//GEN-LAST:event_playButton1MouseClicked
-
-    private void playButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButton1ActionPerformed
-        //EndScreen es = new EndScreen();
-        //es.openPage();
     }//GEN-LAST:event_playButton1ActionPerformed
 
     public void mainMenu() {
@@ -224,7 +225,6 @@ public class QuizMenuGUI extends javax.swing.JFrame {
                 ls = q.listFilesForFolder();
                 
                 String[] s = ls.toArray(new String[ls.size()]);
-                //qm.packageDropDown.setModel(s);
                 qm.packageDropDown.setModel(new DefaultComboBoxModel(ls.toArray()));
                 
             }
