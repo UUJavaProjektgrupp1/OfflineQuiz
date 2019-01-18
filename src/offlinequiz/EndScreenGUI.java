@@ -174,14 +174,14 @@ public class EndScreenGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//When BarChart button is clicked
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         BarChart bc = new BarChart("Answers");
         bc.runChart();
         
     }//GEN-LAST:event_jButton1ActionPerformed
-
+//When PieChart Button is clicked
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
         PieChart pc = new PieChart("Answers");
@@ -244,6 +244,8 @@ public class EndScreenGUI extends javax.swing.JFrame {
     private javax.swing.JList<String> top10_2;
     private javax.swing.JList<String> top10_3;
     // End of variables declaration//GEN-END:variables
+    
+    //Change the variables on the Frame
     public void setVariables(){
         QuizCounter qc = new QuizCounter();
         correctAnswers.setText(String.valueOf(qc.getAnswerCounter()));

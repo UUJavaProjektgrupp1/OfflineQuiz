@@ -174,14 +174,14 @@ public class QuizMenuGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-/*
+
     private void playButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playButton1MouseClicked
 
 
         
         
     }//GEN-LAST:event_playButton1MouseClicked
-*/
+
     //When PlayButton is clicked
     private void playButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButton1ActionPerformed
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();

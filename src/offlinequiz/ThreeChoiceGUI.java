@@ -130,6 +130,7 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //When svar1 Button is clicked
     private void svar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_svar1ActionPerformed
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         if (ac.getAnswer1().equals(ac.getCorrectAnswer())) {
@@ -142,6 +143,7 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_svar1ActionPerformed
 
+    //When svar2 Button is clicked
     private void svar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_svar2ActionPerformed
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         if (ac.getAnswer2().equals(ac.getCorrectAnswer())) {
@@ -154,6 +156,7 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_svar2ActionPerformed
 
+    //When svar3 button is clicked
     private void svar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_svar3ActionPerformed
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         if (ac.getAnswer3().equals(ac.getCorrectAnswer())) {
@@ -196,24 +199,16 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
                 ThreeChoiceGUI tcg = new ThreeChoiceGUI();
                 AnswerClass ac = new AnswerClass();
                 QuizCounter qc = new QuizCounter();
+                // Check if there has been 10 questions ---------------------
                 if(qc.checkCounter()){
                     EndScreenGUI es = new EndScreenGUI();
                     es.showMenu();
                     tcg.hide();
                 }
                 else{
-                try {
+                    // Fetch a set of randomized answers -----------------------------
                     ac.randomizeAnswers();
-                } catch (NoSuchMethodException ex) {
-                    Logger.getLogger(ThreeChoiceGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    System.out.println("catch NosuchMethod");
-                } catch (IllegalAccessException ex) {
-                    Logger.getLogger(ThreeChoiceGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    System.out.println("catch IllegalAccess");
-                } catch (InvocationTargetException ex) {
-                    System.out.println("catch InvocationTargetException");
-                    Logger.getLogger(ThreeChoiceGUI.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                //Then set up the variables on the frame -------------------------------
                 tcg.Counter.setText(String.valueOf(qc.getCounter()));
                 tcg.questionLabel.setText(ac.getQuestion());
                 tcg.svar1.setText(ac.getAnswer1());
