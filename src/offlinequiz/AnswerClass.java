@@ -98,16 +98,17 @@ public class AnswerClass {
  * @throws InvocationTargetException 
  */
     public void randomizeAnswers() {
-        String[][] array = new String[2][4];
-        array[0][0] = "Vilken av dessa drycker har en variant som kallas 'Exotic'";
-        array[0][1] = "Fanta ---";
-        array[0][2] = "Coca-cola";
-        array[0][3] = "Sprite";
-        array[1][0] = "Vilken tillverkare har gjort skärmarna i systemet?";
-        array[1][1] = "Samsung";
-        array[1][2] = "LG";
-        array[1][3] = "Sony ---";
-
+        String[][] array = new String[4][20];
+//        array[0][0] = "Vilken av dessa drycker har en variant som kallas 'Exotic'";
+//        array[0][1] = "Fanta ---";
+//        array[0][2] = "Coca-cola";
+//        array[0][3] = "Sprite";
+//        array[1][0] = "Vilken tillverkare har gjort skärmarna i systemet?";
+//        array[1][1] = "Samsung";
+//        array[1][2] = "LG";
+//        array[1][3] = "Sony ---";
+        arrayQuestion aq = new arrayQuestion();
+        array = aq.getArray();
         int randomInt = (int) Math.round(Math.random());
         setQuestion(array[randomInt][0]);
             for (int j = 1; j <= 3; j++) {

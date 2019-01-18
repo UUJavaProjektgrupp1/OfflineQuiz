@@ -5,7 +5,10 @@
  */
 package offlinequiz;
 
+import java.io.FileNotFoundException;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 
@@ -184,10 +187,18 @@ public class QuizMenuGUI extends javax.swing.JFrame {
 
     //When PlayButton is clicked
     private void playButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButton1ActionPerformed
-        ThreeChoiceGUI tcg = new ThreeChoiceGUI();
-        String choice = packageDropDown.getSelectedItem().toString();
-        this.hide();
-        tcg.openWindow();
+        try {
+            ThreeChoiceGUI tcg = new ThreeChoiceGUI();
+            arrayQuestion aq = new arrayQuestion();
+            String choice = packageDropDown.getSelectedItem().toString();
+            String filePath = "src/offlinequiz/packages/" + choice + ".txt";
+            aq.readFile(filePath);
+            this.hide();
+            tcg.openWindow();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(QuizMenuGUI.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("404 - FileNotFound");
+        }
     }//GEN-LAST:event_playButton1ActionPerformed
 
     public void mainMenu() {
