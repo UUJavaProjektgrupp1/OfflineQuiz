@@ -7,6 +7,7 @@ package offlinequiz;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Random;
 
 /**
  *
@@ -109,7 +110,10 @@ public class AnswerClass {
 //        array[1][3] = "Sony ---";
         arrayQuestion aq = new arrayQuestion();
         array = aq.getArray();
-        int randomInt = (int) Math.round(Math.random());
+        Random newRand = new Random();
+        
+        //int randomInt = (int) Math.round(Math.random());
+        int randomInt = newRand.nextInt(array.length - 1);
         setQuestion(array[randomInt][0]);
             for (int j = 1; j <= 3; j++) {
                 String answer = array[randomInt][j];
