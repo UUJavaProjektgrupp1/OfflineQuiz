@@ -190,11 +190,14 @@ public class QuizMenuGUI extends javax.swing.JFrame {
         try {
             ThreeChoiceGUI tcg = new ThreeChoiceGUI();
             arrayQuestion aq = new arrayQuestion();
+            TimerNewTimer timer = new TimerNewTimer();
             String choice = packageDropDown.getSelectedItem().toString();
             String filePath = "src/offlinequiz/packages/" + choice + ".txt";
             aq.readFile(filePath);
+            
             this.hide();
             tcg.openWindow();
+            timer.setStarterTime();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(QuizMenuGUI.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("404 - FileNotFound");

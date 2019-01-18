@@ -22,23 +22,33 @@ public class TimerNewTimer {
 Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 static long starter;
 static long stop;
+static long finalsMinute;
+static long finalsSeconds;
 static long finals;
 
-
 public void setStarterTime(){
- starter= timestamp.getTime()/1000*60; //long starter = timestamp.getTime()/1000*60; // sätter en timestamp på start i millesekuder som förändras till minuter
+ starter= timestamp.getTime()/1000; //long starter = timestamp.getTime()/1000*60; // sätter en timestamp på start i millesekuder som förändras till minuter
     }
 
 public void setStopTime(){
-stop = timestamp.getTime()/1000*60;// sätter en timestamp på stop i millesekunder som förändras till minuter
+stop = timestamp.getTime()/1000;// sätter en timestamp på stop i millesekunder som förändras till minuter
 }
 
-public void setFinalTime(){
-finals = stop-starter; // tar stop minus start. Eftersom stopvärdet är högre än startvärdet. och får ut totala tiden spelets gång.
+
+
+public long getFinals(){
+    finals = stop-starter;
+    return finals;
 }
 
-public long returnFinal(){
-return finals;
+public long returnFinalsMinute(){
+finalsMinute = (stop - starter)/60;
+
+return finalsMinute;
+}
+public long returnFinalsSeconds(){
+    finalsSeconds = (stop-starter)%60;
+    return finalsSeconds;
 }
 }
 
