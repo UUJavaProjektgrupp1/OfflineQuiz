@@ -137,11 +137,9 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         if (ac.getAnswer1().equals(ac.getCorrectAnswer())) {
             qc.setAnswerCounter();
-            tcg.openWindow();
-            this.hide();
+            this.setVariables();
         } else {
-            tcg.openWindow();
-            this.hide();
+            this.setVariables();
         }
     }//GEN-LAST:event_svar1ActionPerformed
 
@@ -150,11 +148,9 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         if (ac.getAnswer2().equals(ac.getCorrectAnswer())) {
             qc.setAnswerCounter();
-            tcg.openWindow();
-            this.hide();
+            this.setVariables();
         } else {
-            tcg.openWindow();
-            this.hide();
+            this.setVariables();
         }
     }//GEN-LAST:event_svar2ActionPerformed
 
@@ -163,13 +159,33 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
         ThreeChoiceGUI tcg = new ThreeChoiceGUI();
         if (ac.getAnswer3().equals(ac.getCorrectAnswer())) {
             qc.setAnswerCounter();
-            tcg.openWindow();
-            this.hide();
+            this.setVariables();
         } else {
-            tcg.openWindow();
-            this.hide();
+            this.setVariables();
         }
     }//GEN-LAST:event_svar3ActionPerformed
+    public void setVariables() {
+        AnswerClass ac = new AnswerClass();
+        QuizCounter qc = new QuizCounter();
+        if (qc.checkCounter()) {
+            EndScreenGUI es = new EndScreenGUI();
+            es.showMenu();
+            this.hide();
+        } else {
+            // Fetch a set of randomized answers -----------------------------
+            ac.randomizeAnswers();
+            //Then set up the variables on the frame -------------------------------
+            this.Counter.setText(String.valueOf(qc.getCounter() + 1));
+            this.questionLabel.setText(ac.getQuestion());
+            this.svar1.setText(ac.getAnswer1());
+            this.svar2.setText(ac.getAnswer2());
+            this.svar3.setText(ac.getAnswer3());
+            this.correctAnswerCounter.setText(String.valueOf(qc.getAnswerCounter()));
+            this.setVisible(true);
+            qc.AddToCounter();
+        }
+    }
+    
 
     public void openWindow() {
         /* Set the Nimbus look and feel */
@@ -202,23 +218,22 @@ public class ThreeChoiceGUI extends javax.swing.JFrame {
                 AnswerClass ac = new AnswerClass();
                 QuizCounter qc = new QuizCounter();
                 // Check if there has been 10 questions ---------------------
-                if(qc.checkCounter()){
+                if (qc.checkCounter()) {
                     EndScreenGUI es = new EndScreenGUI();
                     es.showMenu();
                     tcg.hide();
-                }
-                else{
+                } else {
                     // Fetch a set of randomized answers -----------------------------
                     ac.randomizeAnswers();
-                //Then set up the variables on the frame -------------------------------
-                tcg.Counter.setText(String.valueOf(qc.getCounter()+1));
-                tcg.questionLabel.setText(ac.getQuestion());
-                tcg.svar1.setText(ac.getAnswer1());
-                tcg.svar2.setText(ac.getAnswer2());
-                tcg.svar3.setText(ac.getAnswer3());
-                tcg.correctAnswerCounter.setText(String.valueOf(qc.getAnswerCounter()));
-                tcg.setVisible(true);
-                qc.AddToCounter();
+                    //Then set up the variables on the frame -------------------------------
+                    tcg.Counter.setText(String.valueOf(qc.getCounter() + 1));
+                    tcg.questionLabel.setText(ac.getQuestion());
+                    tcg.svar1.setText(ac.getAnswer1());
+                    tcg.svar2.setText(ac.getAnswer2());
+                    tcg.svar3.setText(ac.getAnswer3());
+                    tcg.correctAnswerCounter.setText(String.valueOf(qc.getAnswerCounter()));
+                    tcg.setVisible(true);
+                    qc.AddToCounter();
                 }
             }
         });
